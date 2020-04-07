@@ -1,4 +1,4 @@
-package com.codeclan.example.FilesAndFolders;
+package com.codeclan.example.filesService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

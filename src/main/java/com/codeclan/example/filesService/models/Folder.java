@@ -1,7 +1,7 @@
-package models;
+package com.codeclan.example.filesService.models;
 
 import javax.persistence.*;
-import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="folders")
@@ -12,8 +12,8 @@ public class Folder {
     @Column
     private String title;
 
-    @OneToMany(mappedBy="Ship")
-    private ArrayList<File> files;
+    @OneToMany(mappedBy="folder")
+    private List<File> files;
 
     public Folder(String title) {
         this.title = title;
@@ -35,13 +35,5 @@ public class Folder {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public ArrayList<File> getFiles() {
-        return files;
-    }
-
-    public void setFiles(ArrayList<File> files) {
-        this.files = files;
     }
 }

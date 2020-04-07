@@ -1,6 +1,6 @@
-package repositories;
+package com.codeclan.example.filesService.repositories;
 
-import models.File;
+import com.codeclan.example.filesService.models.File;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
