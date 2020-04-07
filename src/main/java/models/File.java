@@ -15,6 +15,10 @@ public class File {
     @Column
     private int size;
 
+    @ManyToOne
+    @JoinColumn(name="folder_id", nullable = false)
+    private Folder folder;
+
     public File(String name, String extension, int size) {
         this.name = name;
         this.extension = extension;
